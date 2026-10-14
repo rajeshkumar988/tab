@@ -1,0 +1,40 @@
+.container { 
+    width: 50%;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.header {
+    border: 2px solid black;
+    grid-area: header;
+    background: #cdebf3;
+}
+
+.sidebar {
+    border: 2px solid black;
+    grid-area: sidebar;
+    background: #fce7c9;
+}
+
+.main {
+    border: 2px solid black;
+    grid-area: main;
+    background: #d8f0df;
+}
+
+.footer {    
+    border: 2px solid black;
+    grid-area: footer;
+    background: #e4ddf7;
+}
+
+.box {
+    padding: 18px;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+}
